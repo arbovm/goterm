@@ -1,0 +1,6 @@
+examples/*.6
+examples/shelld
+term/*.6
+term/*.o
+term/_cgo*
+term/_obj/

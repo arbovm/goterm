@@ -1,6 +1,7 @@
 #include <termios.h>
 #include <sys/ioctl.h>
-#include <pty.h>
+#include <util.h>
+//#include <pty.h>
 #include <utmp.h>
 #include <unistd.h>
 

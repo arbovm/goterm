@@ -7,7 +7,7 @@
 package main
 
 import(
-	"github.com/krockot/goterm/term"
+	"../term/_obj/term"
 	"fmt"
 	"net"
 	"os"
@@ -18,8 +18,8 @@ import(
 func Serve(conn net.Conn) {
 	defer conn.Close()
 	tty,pid,err := term.ForkPty(
-		"/bin/login",
-		[]string{"/bin/login"},
+		"/bin/bash",
+		[]string{"/bin/bash", "-l"},
 		term.DefaultAttributes(),
 		term.NewWindowSize(80,25))
 
